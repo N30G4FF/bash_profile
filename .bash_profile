@@ -7,4 +7,9 @@ docker_purge(){
 	docker rmi $(docker images -q)
 }
 
+ship(){
+	npm run build &&
+	npm publish
+}
+
 alias mysqldump='~/Desktop/utils/mysql/bin/mysqldump'
